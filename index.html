@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency calculator</title>
+    <script defer src="js/script.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/container.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="body">
+    <div class ="container">
+    <p class ="form__text">Currenncy calculator</p>
+    <form class="js-form form">
+        <fieldset class = "form__fieldset">
+            <legend class = "form__legend">Your money(PLN)</legend>
+            <p>
+                <label>
+                    <span class = "form__labelText" >Amount(PLN)* </span><input class="js-amount form__field" type="number" min="1" step="any" name="amount" required
+                        step="0.01" placeholder="How much money transfer?">
+                </label>
+            </p>
+            <p>
+                <label>
+                    <span class = "form__labelText" > Select a currency</span>
+                    <select class="js-currency form__field" name="currency">
+                        <option value="EUR">EUR</option>
+                        <option value="USD">USD</option>
+                        <option value="CHF">CHF</option>
+                        <option value="AUD">AUD</option>
+                    </select>
+                </label>
+            </p>
+        </fieldset>
+        <button class="form__button js-button">Calculate</button>
+        <button  class="form__button" type="reset">Reset</button>
+        <p class="js-result form__result"></p>
+    </div>
+    </form>
+</body>
+
+</html>
